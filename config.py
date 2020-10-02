@@ -1,4 +1,9 @@
-TOKEN = 'NzU2NzQ5NzczMjg5MDI5NjUy.X2WYJQ.LduHg7buG6nsnS1g_b_gIDx4IZY'
+def read_token():
+    with open("token.txt", "r") as f:
+        lines = f.readlines()
+        return lines[0].strip()
+
+TOKEN = read_token()
 
 POST_ID = 761579822697676832
 
